@@ -27,33 +27,33 @@ function getMintRequest (uint seq)  returns (uint requestSeq, address requester,
 
   **uint requestSeq:** The sequence of calling requestMint.
 
-**address requester:** The merchant’s ETH address.
+  **address requester:** The merchant’s ETH address.
 
-**uint amount:** The amount of MBTC to be minted.
+  **uint amount:** The amount of MBTC to be minted.
 
-**string btcAddress:** The BTC address which is provided by Custodian to receive BTC from the merchant. 
+  **string btcAddress:** The BTC address which is provided by Custodian to receive BTC from the merchant. 
 
-**string btcTxId:** The transaction ID of transferring BTC from merchant’s address to custodian’s address.
+  **string btcTxId:** The transaction ID of transferring BTC from merchant’s address to custodian’s address.
 
-**uint requestBlockN:** The height of the block which includes the requestMint transaction.
+  **uint requestBlockN:** The height of the block which includes the requestMint transaction.
 
-**uint confirmedBlockNo:** The height of the block which includes the confirmMintRequest transaction.
+  **uint confirmedBlockNo:** The height of the block which includes the confirmMintRequest transaction.
 
-**string status:** Status of transaction. They are pending, canceled, approved and rejected. 
+  **string status:** Status of transaction. They are pending, canceled, approved and rejected. 
 
-**bytes32 requestHash:** Hash of requestMint transaction. It will be input to call  confirmMintRequest, rejectMintRequest and cancelMintRequest. 
+  **bytes32 requestHash:** Hash of requestMint transaction. It will be input to call  confirmMintRequest, rejectMintRequest and cancelMintRequest. 
 
-### 2. Get times of calling burn
+### 3. Get times of calling burn
 function getBurnRequestsLength ( )   returns (uint)
-**RETURN:** Returns a value indicating the times of calling burn. 
+* **RETURN:** Returns a value indicating the times of calling burn. 
 
-Get details of the burning 
+### 4. Get details of the burning 
 function getBurnRequest (uint seq)  returns (uint requestSeq, address requester, uint amount, string btcAddress, string btcTxId, uint requestBlockNo, uint confirmedBlockNo, string status, bytes32 requestHash)
-uint seq: The sequence of calling burn, from 1 to getBurnRequestsLength()-1.
-RETURN:
-            uint requestSeq: The sequence of calling burn.
-            address requester: The merchant’s ETH address.
-            uint amount: The amount of MBTC to be burned.
+* **uint seq:** The sequence of calling burn, from 1 to getBurnRequestsLength()-1.
+* **RETURN:**
+  **uint requestSeq:** The sequence of calling burn.
+  **address requester:** The merchant’s ETH address.
+  **uint amount:** The amount of MBTC to be burned.
 string btcAddress: The merchant’s BTC address Which is used to receive the BTC from the custodian. 
 string btcTxId: The transaction ID of transferring BTC from custodian’s address to the merchant’s address.
 uint requestBlockNo: The height of the block which includes the burn transaction.
