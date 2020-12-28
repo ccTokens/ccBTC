@@ -1,4 +1,4 @@
-MBTC API Guideline 
+# MBTC API Guideline 
 ===
 This document is used for developers to interact with the smart contract. If you are a merchant, we suggest you read the Merchant Guide before using this document. 
 
@@ -12,16 +12,17 @@ MintFactory：
 
 MemberMgr：
 
-# API of MintFactory 
+## API of MintFactory 
 ---
-## Get times of calling requestMint
+### Get times of calling requestMint
 function getMintRequestsLength ( )   returns (uint)
 * **RETURN:** Returns a value indicating the times of calling requestMint. 
 
-## 1. Get details of the minting
+### 1. Get details of the minting
 function getMintRequest (uint seq)  returns (uint requestSeq, address requester, uint amount, string btcAddress, string btcTxId, uint requestBlockNo, uint confirmedBlockNo, string status, bytes32 requestHash)
-    * uint seq: The sequence of calling requestMint, from 1 to getMintRequestsLength()-1.
-    * RETURN:
+
+* uint seq: The sequence of calling requestMint, from 1 to getMintRequestsLength()-1.
+* **RETURN:**
     >>uint requestSeq: The sequence of calling requestMint.
     >>address requester: The merchant’s ETH address.
 >>uint amount: The amount of MBTC to be minted.
