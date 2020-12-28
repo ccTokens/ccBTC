@@ -14,26 +14,36 @@ MemberMgr：
 
 ## API of MintFactory 
 ---
-### Get times of calling requestMint
+### 1. Get times of calling requestMint
 function getMintRequestsLength ( )   returns (uint)
 * **RETURN:** Returns a value indicating the times of calling requestMint. 
 
-### 1. Get details of the minting
+### 2. Get details of the minting
 function getMintRequest (uint seq)  returns (uint requestSeq, address requester, uint amount, string btcAddress, string btcTxId, uint requestBlockNo, uint confirmedBlockNo, string status, bytes32 requestHash)
 
-* uint seq: The sequence of calling requestMint, from 1 to getMintRequestsLength()-1.
-* **RETURN:**
-    >>uint requestSeq: The sequence of calling requestMint.
-    >>address requester: The merchant’s ETH address.
->>uint amount: The amount of MBTC to be minted.
->>string btcAddress: The BTC address which is provided by Custodian to receive BTC from the merchant. 
->>string btcTxId: The transaction ID of transferring BTC from merchant’s address to custodian’s address.
->>uint requestBlockN: The height of the block which includes the requestMint transaction.
->>uint confirmedBlockNo: The height of the block which includes the confirmMintRequest transaction.
->>string status: Status of transaction. They are pending, canceled, approved and rejected. 
->>bytes32 requestHash: Hash of requestMint transaction. It will be input to call  confirmMintRequest, rejectMintRequest and cancelMintRequest. 
+* **uint seq:** The sequence of calling requestMint, from 1 to getMintRequestsLength()-1.
 
-## 2. Get times of calling burn
+* **RETURN:**
+
+**uint requestSeq:** The sequence of calling requestMint.
+
+**address requester:** The merchant’s ETH address.
+
+**uint amount:** The amount of MBTC to be minted.
+
+**string btcAddress:** The BTC address which is provided by Custodian to receive BTC from the merchant. 
+
+**string btcTxId:** The transaction ID of transferring BTC from merchant’s address to custodian’s address.
+
+**uint requestBlockN:** The height of the block which includes the requestMint transaction.
+
+**uint confirmedBlockNo:** The height of the block which includes the confirmMintRequest transaction.
+
+**string status:** Status of transaction. They are pending, canceled, approved and rejected. 
+
+**bytes32 requestHash:** Hash of requestMint transaction. It will be input to call  confirmMintRequest, rejectMintRequest and cancelMintRequest. 
+
+### 2. Get times of calling burn
 function getBurnRequestsLength ( )   returns (uint)
 **RETURN:** Returns a value indicating the times of calling burn. 
 
