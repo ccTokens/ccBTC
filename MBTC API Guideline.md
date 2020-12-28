@@ -1,5 +1,4 @@
 # MBTC API Guideline 
-===
 This document is used for developers to interact with the smart contract. If you are a merchant, we suggest you read the Merchant Guide before using this document. 
 
 Following contract addresses should be awarded：
@@ -13,7 +12,6 @@ MintFactory：
 MemberMgr：
 
 ## API of MintFactory 
----
 ### 1. Get times of calling requestMint
 function getMintRequestsLength ( )   returns (uint)
 * **RETURN:** Returns a value indicating the times of calling requestMint. 
