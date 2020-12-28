@@ -25,7 +25,7 @@ function getMintRequest (uint seq)  returns (uint requestSeq, address requester,
 
 * **RETURN:**
 
-**uint requestSeq:** The sequence of calling requestMint.
+  **uint requestSeq:** The sequence of calling requestMint.
 
 **address requester:** The merchant’s ETH address.
 
