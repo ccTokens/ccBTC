@@ -23,9 +23,11 @@ function getMintRequest (uint seq)  returns (uint requestSeq, address requester,
 
 * uint seq: The sequence of calling requestMint, from 1 to getMintRequestsLength()-1.
 * RETURN:
-    >>uint requestSeq: The sequence of calling requestMint.
-    >>address requester: The merchant’s ETH address.
-    >>uint amount: The amount of MBTC to be minted.
+>>uint requestSeq: The sequence of calling requestMint.
+
+>>address requester: The merchant’s ETH address.
+
+>>uint amount: The amount of MBTC to be minted.
 >>string btcAddress: The BTC address which is provided by Custodian to receive BTC from the merchant. 
 >>string btcTxId: The transaction ID of transferring BTC from merchant’s address to custodian’s address.
 >>uint requestBlockN: The height of the block which includes the requestMint transaction.
