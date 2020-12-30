@@ -1,5 +1,5 @@
 # MBTC API Guideline 
-This document is used for developers to interact with the smart contract. If you are a merchant, we suggest you read the Merchant Guide before using this document. 
+This document is used for developers to interact with the smart contract. If you are a merchant, we suggest you read the [Merchant Guide](https://github.com/mtokens/Smart-Contract/blob/main/Merchant%20Guide.md) before using this document. 
 
 Following contract addresses should be awarded：
 
