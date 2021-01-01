@@ -3,11 +3,11 @@ This document is used for developers to interact with the smart contract. If you
 
 Following contract addresses should be awarded：
 
-**MBTC:** [0xcfc013b416be0bd4b3bede35659423b796f8dcf0](https://etherscan.io/address/0xcfc013b416be0bd4b3bede35659423b796f8dcf0#code)
+**MBTC:** [0xcfc013b416be0bd4b3bede35659423b796f8dcf0](https://etherscan.io/address/0xcfc013b416be0bd4b3bede35659423b796f8dcf0)
 
-**MTokenController:** [0x73dC27C71ECf110CB8F7Bc12610499F3611e5d72](https://etherscan.io/address/0x73dc27c71ecf110cb8f7bc12610499f3611e5d72#code)
+**MTokenController:** [0x73dC27C71ECf110CB8F7Bc12610499F3611e5d72](https://etherscan.io/address/0x73dc27c71ecf110cb8f7bc12610499f3611e5d72)
 
-**MintFactory:** [0x4Bb471fd0aeA88751fbEF07dC414cF4E1d0Cd673](https://etherscan.io/address/0x4bb471fd0aea88751fbef07dc414cf4e1d0cd673#code)
+**MintFactory:** [0x4Bb471fd0aeA88751fbEF07dC414cF4E1d0Cd673](https://etherscan.io/address/0x4bb471fd0aea88751fbef07dc414cf4e1d0cd673)
 
 **MemberMgr:** [0xd922698f9B4fe36370E6d28f0C4783A308b40B44](https://etherscan.io/address/0xd922698f9b4fe36370e6d28f0c4783a308b40b44)
 
