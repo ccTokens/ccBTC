@@ -108,13 +108,13 @@ function burn (uint amount)    returns (bool)
 function confirmMintRequest (bytes32 requestHash)    returns (bool)
 * **msg.sender:** Custodian.
 * **bytes32 requestHash:** Hash of requestMint transaction.
-* **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is success, false is failure.
+* **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is a success, false is a failure.
 
 ### 11. Reject minting
 function rejectMintRequest (bytes32 requestHash)    returns (bool)
 * **msg.sender:** Custodian.
 * **bytes32 requestHash:** Hash of requestMint transaction.
-* **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is success, false is failure.
+* **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is a success, false is a failure.
 
 ### 12. Confirm burning
 function confirmBurnRequest (bytes32 requestHash, string btcTxId)    returns (bool)
