@@ -1,11 +1,11 @@
-# MBTC API Guideline 
+# ccBTC API Guideline 
 This document is used for developers to interact with the smart contract. If you are a merchant, we suggest you read the [Merchant Guide](https://github.com/mtokens/Smart-Contract/blob/main/Merchant%20Guide.md) before using this document. 
 
 Following contract addresses should be awarded：
 
-**MBTC:** [0xcfc013b416be0bd4b3bede35659423b796f8dcf0](https://etherscan.io/address/0xcfc013b416be0bd4b3bede35659423b796f8dcf0)
+**ccBTC:** [0xcfc013b416be0bd4b3bede35659423b796f8dcf0](https://etherscan.io/address/0xcfc013b416be0bd4b3bede35659423b796f8dcf0)
 
-**MTokenController:** [0x73dC27C71ECf110CB8F7Bc12610499F3611e5d72](https://etherscan.io/address/0x73dc27c71ecf110cb8f7bc12610499f3611e5d72)
+**ccTokenController:** [0x73dC27C71ECf110CB8F7Bc12610499F3611e5d72](https://etherscan.io/address/0x73dc27c71ecf110cb8f7bc12610499f3611e5d72)
 
 **MintFactory:** [0x4Bb471fd0aeA88751fbEF07dC414cF4E1d0Cd673](https://etherscan.io/address/0x4bb471fd0aea88751fbef07dc414cf4e1d0cd673)
 
@@ -27,7 +27,7 @@ function getMintRequest (uint seq)  returns (uint requestSeq, address requester,
 
   **address requester:** The merchant’s ETH address.
 
-  **uint amount:** The amount of MBTC to be minted.
+  **uint amount:** The amount of ccBTC to be minted.
 
   **string btcAddress:** The BTC address which is provided by Custodian to receive BTC from the merchant. 
 
@@ -54,7 +54,7 @@ function getBurnRequest (uint seq)  returns (uint requestSeq, address requester,
   
   **address requester:** The merchant’s ETH address.
   
-  **uint amount:** The amount of MBTC to be burned.
+  **uint amount:** The amount of ccBTC to be burned.
   
   **string btcAddress:** The merchant’s BTC address Which is used to receive the BTC from the custodian. 
   
@@ -84,7 +84,7 @@ function setMerchantBtcDepositAddress (string btcAddress)    returns (bool)
 ### 7. Request minting
 function requestMint (uint amount, string btcTxId)    returns (bool)
 * **msg.sender:** Merchant.
-* **uint amount:** The amount of MBTC to be minted.
+* **uint amount:** The amount of ccBTC to be minted.
 * **string btcTxId:** The transaction ID of transferring BTC from merchant’s address to deposit address.
 * **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is a success, false is a failure.
 
@@ -99,10 +99,10 @@ function cancelMintRequest (bytes32 requestHash)    returns (bool)
 ### 9. Burn
 function burn (uint amount)    returns (bool)
 * **msg.sender:** Merchant.
-* **uint amount:** The amount of MBTC to be burned.
+* **uint amount:** The amount of ccBTC to be burned.
 * **RETURN:** Returns a boolean value indicating whether or not the operation succeeded. True is a success, false is a failure.
 
-**NOTE:** Before calling the function burn, the merchant must first approve the MintFactory to transfer the MBTC. The amount of approval is the amount to be burnt.
+**NOTE:** Before calling the function burn, the merchant must first approve the MintFactory to transfer the ccBTC. The amount of approval is the amount to be burnt.
 
 ### 10. Confirm minting
 function confirmMintRequest (bytes32 requestHash)    returns (bool)
