@@ -3,13 +3,13 @@ This document is used for developers to interact with the smart contract. If you
 
 Following contract addresses should be awarded：
 
-**ccBTC:** [0xcfc013b416be0bd4b3bede35659423b796f8dcf0](https://etherscan.io/address/0xcfc013b416be0bd4b3bede35659423b796f8dcf0)
+**ccBTC:** [0xef206FEfE1c7506A8Aa2CB39597AE3263204416D](https://etherscan.io/address/0xef206fefe1c7506a8aa2cb39597ae3263204416d#code)
 
-**ccTokenController:** [0x73dC27C71ECf110CB8F7Bc12610499F3611e5d72](https://etherscan.io/address/0x73dc27c71ecf110cb8f7bc12610499f3611e5d72)
+**ccTokenController:** [0x613Dee9C13F0cbA2CaA758f415bF934D704A08e8](https://etherscan.io/address/0x613dee9c13f0cba2caa758f415bf934d704a08e8#code)
 
-**MintFactory:** [0x4Bb471fd0aeA88751fbEF07dC414cF4E1d0Cd673](https://etherscan.io/address/0x4bb471fd0aea88751fbef07dc414cf4e1d0cd673)
+**MintFactory:** [0x161154862465ba4A5e1ebE452f7b4f3a91506679](https://etherscan.io/address/0x161154862465ba4A5e1ebE452f7b4f3a91506679#code)
 
-**MemberMgr:** [0xd922698f9B4fe36370E6d28f0C4783A308b40B44](https://etherscan.io/address/0xd922698f9b4fe36370e6d28f0c4783a308b40b44)
+**MemberMgr:** [0x706a779E29B9e9128c5CEfc68140a4310dDbeAEB](https://etherscan.io/address/0x706a779e29b9e9128c5cefc68140a4310ddbeaeb#code)
 
 ## API of MintFactory 
 ### 1. Get times of calling requestMint
